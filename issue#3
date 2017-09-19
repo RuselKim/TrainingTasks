@@ -1,0 +1,8 @@
+function getHttpObject(data) {
+    result = {};
+    var arr = data.split(" ");
+    result.method = arr[0];
+    result.path = arr[1];
+    result.version = arr[2];
+    return result;
+}

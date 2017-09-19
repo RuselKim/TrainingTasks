@@ -1,0 +1,8 @@
+function secLetterToAnotherCase(text) {
+    var arr = text.split("");
+    for (i = 1; i < arr.length; i += 2) {
+        arr[i] <= "Z" ? arr[i] = arr[i].toLowerCase() :
+            arr[i] = arr[i].toUpperCase();
+    }
+    return arr.join("");
+}

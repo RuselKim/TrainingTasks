@@ -1,0 +1,10 @@
+function arrayToMatrix(arr) {
+    var result = [];
+    for (i = 0; i < 3; i++) {
+        result[i] = [];
+        for (j = 0; j < 3; j++) {
+            result[i][j] = arr[0];
+            arr.splice(0, 1)
+        }
+    }
+}
